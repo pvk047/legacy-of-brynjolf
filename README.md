@@ -5,7 +5,7 @@ A CLI(Node.js) implementation of Legacy of BrynJolf.
 ## Table of Contents
 
 - [About Legacy Of BrynJolf](#about-legacy-of-brynjolf)
-- [Levels of Legcay of BrynJolf](#levels-of-legcay-of-brynjolf)
+- [Levels of Legacy of BrynJolf](#levels-of-legcay-of-brynjolf)
 - [Prerequisites](#prerequisites)
 - [Installation and Basic setup](#installation-and-basic-setup)
 - [Usage](#usage)
@@ -22,11 +22,11 @@ A CLI(Node.js) implementation of Legacy of BrynJolf.
 
 ## Usage:
 ### How to Run/Start:
-We Can start CLI application in serveral ways as list below:
+We Can start this CLI application in several ways as list below:
 1. After Build we can use: `npm start` or `node ./dist/index.js`.
 2. Without Build we can use: `npm run dev`.
 
-If You start the CLI using above methods You will prompt like this: 
+If You start the CLI using the above methods You will prompt like this: 
 
 ```
 Welcome to Legacy of BrynJolf
@@ -45,11 +45,11 @@ Please Refer [About Legacy Of BrynJolf](#probelm2-enlightenment) to know about E
 
  Please Refer [About Legacy Of BrynJolf](#probelm1-establishment) to know about Establishment Problem.
  
- You will prompted as below:
+ You will be prompted as below:
  ```
  ****Establish Problem*****
 Note: 
- '.' means Empty.'G' means Guard.'X' means Wall.'B' means Brynjolf.'E' means Exit.
+ '.' means Empty.  'G' means Guard. 'X' means Wall. 'B' means Brynjolf. 'E' means Exit.
  ___ ___ ___ ___
 | . | . | . | X |
  ___ ___ ___ ___
@@ -68,7 +68,7 @@ Note:
 Example directions string: 'uud' means move up, move up and move down from the current position of 'B'
 Please Enter Movement Directions: 
  ```
-Now you have to enter the suqence of movements as per above instructions.
+Now you have to enter the sequence of movements as per the above instructions.
 
 Example: 
 You entered `rrrrr` then you will prompted as below: 
@@ -95,18 +95,18 @@ Directions:  [ 'r', 'r', 'r', 'r', 'r' ]
 | . | . | . | G |
  ___ ___ ___ ___
 
-Result: win:executed 2 of 5
+Result: win: executed 2 of 5
 ```
 
 #### If you choose 2 (Enlightenment Problem.):
 
 Please Refer [About Legacy Of BrynJolf](#probelm2-enlightenment) to know about Enlightenment Problem.
  
- You will prompted as below:
+ You will be prompted as below:
  ```
  ****Establish Problem*****
 Note: 
- '.' means Empty.'G' means Guard.'X' means Wall.'B' means Brynjolf.'E' means Exit.
+ '.' means Empty. 'G' means Guard. 'X' means Wall. 'B' means Brynjolf. 'E' means Exit.
  ___ ___ ___ ___
 | . | . | . | X |
  ___ ___ ___ ___
@@ -125,7 +125,7 @@ Note:
 Example directions string: 'uud' means move up, move up and move down from the current position of 'B'
 Please Enter Movement Directions: 
  ```
-Now you have to enter the suqence of movements as per above instructions.
+Now you have to enter the sequence of movements as per the above instructions.
 
 Example: 
 You entered `rrrrr` then you will prompted as below: 
@@ -152,19 +152,19 @@ Directions:  [ 'r', 'r', 'r', 'r', 'r' ]
 | . | . | . | G |
  ___ ___ ___ ___
 
-Result: win:executed 2 of 5
+Result: win: executed 2 of 5
 ```
 
 #### If you choose 3(Exit):
-You will prompted with Bye and Exits(closes) this Application.
+You will be prompted with Bye and Exits(closes) this Application.
 
 
 
 ## About Legacy Of BrynJolf:
   Brynjolf, a legendary thief is known to escape even from the most secure rooms. Over the years, the guards have been tightening their security.
-  Fearing the future of younger thieves he decidedto start a school of Larceny.
+  Fearing the future of younger thieves he decided to start a school of Larceny.
   
-  Brynjolf can move `one step`  either to left, right, up or down.He keeps going through empty space until he hits a wall or reaches the exit. If he reaches the exit he wins.The guards copy Bryjolf's direction and run in the samedirection except they don't go through the exit. Theytreat it like a wall.
+  Brynjolf can move `one step`  either to left, right, up, or down. He keeps going through space until he hits a wall or reaches the exit. If he reaches the exit he wins. The guards copy Bryjolf's direction and run in the same direction except they don't go through the exit. They treat it like a wall.
   #### Symbols:
   1. **.** Means Empty Space.
   2. **G** Means Guards.
@@ -186,7 +186,7 @@ You will prompted with Bye and Exits(closes) this Application.
                ___ ___ ___ ___
 
 
-  The exit is to the right of Brynjolf. He runs right and the guards do the same too. He goes out of the exit andleaves. This is how it would look: 
+  The exit is to the right of Brynjolf. He runs right and the guards do the same too. He goes out of the exit and leaves. This is how it would look: 
  
              ___ ___ ___ ___
             | . | . | . | X |
@@ -199,7 +199,7 @@ You will prompted with Bye and Exits(closes) this Application.
              ___ ___ ___ ___
 
  
-If BrynJolf(Player) to right,right He Reaches the Exit than means BrynJolf Won.This is how it would look: 
+If BrynJolf(Player) moves to the right, right He Reaches the Exit which means BrynJolf Won. This is how it would look: 
  
      ___ ___ ___ ___
     | . | . | . | X |
@@ -211,7 +211,7 @@ If BrynJolf(Player) to right,right He Reaches the Exit than means BrynJolf Won.T
     | . | . | . | G |
      ___ ___ ___ ___
  
- If BrynJolf(Player) to right,up then Guard Will Catch BrynJolf(Player)  than means BrynJolf was Lose.This is how it would look: 
+ If BrynJolf(Player) moves to the right, up then the guard will catch BrynJolf(Player) which means BrynJolf was lost. This is how it would look: 
  
      ___ ___ ___ ___
     | . | . | . | X |
@@ -223,7 +223,7 @@ If BrynJolf(Player) to right,right He Reaches the Exit than means BrynJolf Won.T
     | . | . | . | G |
      ___ ___ ___ ___
  
-If BrynJolf(Player) to left,left,left,left then Guards and BrynJolf(Player)  are unable to Move than means game was undecided.This is how it would look: 
+If BrynJolf(Player) moves to left, left, left, left then Guards and BrynJolf(Player)  are unable to Move which means the game was undecided. This is how it would look: 
 
      ___ ___ ___ ___
     | . | . | . | X |
@@ -235,7 +235,7 @@ If BrynJolf(Player) to left,left,left,left then Guards and BrynJolf(Player)  are
     | G | . | . | . |
      ___ ___ ___ ___
      
- ## Levels of Legcay of BrynJolf
+ ## Levels of Legacy of BrynJolf
 
  #### Direction Symbols:
   1. **u** to move UP.
@@ -243,12 +243,12 @@ If BrynJolf(Player) to left,left,left,left then Guards and BrynJolf(Player)  are
   3. **r** to Move RIGHT.
   4. **l** to Move LEFT.
 
-#### Probelm1: Establishment:
-  Sequunce of movements and room will provided as input and we need to print the room how that room looks at the end.
+#### Problem 1: Establishment:
+  A sequence of movements and room will be provided as input and we need to print the room how that room looks at the end.
   Example: 
     input: 
    
-      Sequunce of movements: rll
+      Sequence of movements: rll
       Room: 
                    ___ ___ ___ ___
                   | . | . | . | X |
@@ -276,16 +276,14 @@ If BrynJolf(Player) to left,left,left,left then Guards and BrynJolf(Player)  are
           status: safe
     ```
  
-#### Probelm2: EnLightenment:
-  1.Sequunce of movements and room will provided as input and we need print the shortest path to win or print status if already given sequence of moveements leads to won or lose or undecided status.
-  
-  2.Only Room Data  will provided as input and we need to print the room along with shortest wining path.
-  
+#### Problem 2: Enlightenment:
+  1.Sequence of movements and room will be provided as input and we need to print the shortest path to win or print status if already given sequence of movements leads to won or lose or undecided status.
+  2.If only Room Data is provided as input then we need to print the room and the shortest winning path.
   Example for Case 1: 
  
     input: 
    
-      Sequunce of movements: rll
+      Sequence of movements: rll
       Room: 
                    ___ ___ ___ ___
                   | . | . | . | X |
@@ -315,7 +313,7 @@ If BrynJolf(Player) to left,left,left,left then Guards and BrynJolf(Player)  are
  
     input: 
    
-      Sequunce of movements: <empty>
+      Sequence of movements: <empty>
       Room: 
                    ___ ___ ___ ___
                   | . | . | . | X |
@@ -341,10 +339,3 @@ If BrynJolf(Player) to left,left,left,left then Guards and BrynJolf(Player)  are
                  ___ ___ ___ ___
 
           path: rrr
-     
- 
-
-
-
-
-

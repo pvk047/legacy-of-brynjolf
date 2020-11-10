@@ -31,12 +31,17 @@ If You start the CLI using above methods You will prompt like this:
 ```
 Welcome to Legacy of BrynJolf
 Please Enter : 
- 1--> Establishment of the Problem 
- 2 --> Enlightenment of the Problem 
- 3 --> Exit.
-
+ 1 --> to Start Establishment Problem. 
+ 2 --> to Start Enlightenment Problem 
+ 3 --> to Exit.
+> 
 ```
-You have Choose an option from provided options.
+
+Please Refer [About Legacy Of BrynJolf](#probelm1-establishment)] to know about Establishment Problem.
+Please Refer [About Legacy Of BrynJolf](#probelm2-enlightenment)] to know about Enlightenment Problem.
+
+
+
 
 
 ## About Legacy Of BrynJolf:

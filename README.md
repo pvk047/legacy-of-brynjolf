@@ -6,6 +6,37 @@ A CLI(Node.js) implementation of Legacy of BrynJolf.
 
 - [About Legacy Of BrynJolf](#about-legacy-of-brynjolf)
 - [Levels of Legcay of BrynJolf](#levels-of-legcay-of-brynjolf)
+- [Prerequisites](#prerequisites)
+- [Installation and Basic setup](#installation-and-basic-setup)
+- [Usage](#usage)
+
+
+## Prerequisites
+
+1. [Node.js](https://nodejs.org) and [npm](https://npmjs.com) installed (verified with npm version 6.14.8 and Node v10.16.0).
+
+## Installation and Basic setup
+1. Clone or download this repository.
+2. Install dependencies using `npm install`.
+3. To build use: `npm run build`.
+
+## Usage:
+### How to Run/Start:
+We Can start CLI application in serveral ways as list below:
+1. After Build we can use: `npm start` or `node ./dist/index.js`.
+2. Without Build we can use: `npm run dev`.
+
+If You start the CLI using above methods You will prompt like this: 
+
+```
+Welcome to Legacy of BrynJolf
+Please Enter : 
+ 1--> Establishment of the Problem 
+ 2 --> Enlightenment of the Problem 
+ 3 --> Exit.
+
+```
+You have Choose an option from provided options.
 
 
 ## About Legacy Of BrynJolf:
@@ -191,33 +222,6 @@ If BrynJolf(Player) to left,left,left,left then Guards and BrynJolf(Player)  are
  
 
 
-## Prerequisites
-
-1. [Node.js](https://nodejs.org) and [npm](https://npmjs.com) installed (verified with npm version 6.14.8 and Node v10.16.0).
-
-## Installation and Basic setup
-1. Clone or download this repository.
-2. Install dependencies using `npm install`.
-3. To build use: `npm run build`.
-
-## How to Run/Start:
-You can strart CLI in multiple ways:
-1. After Build we can use: `npm start` or `node ./dist/index.js`.
-2. Without Build we can use: `npm run dev`.
-
-## Usage
-
-If You start the CLI You will prompt like this: 
-
-```
-Welcome to Legacy of BrynJolf
-Please Enter : 
- 1--> Establishment of the Problem 
- 2 --> Enlightenment of the Problem 
- 3 --> Exit.
-
-```
-You have Choose an option from provided options.
 
 
 

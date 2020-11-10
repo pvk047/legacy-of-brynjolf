@@ -28,6 +28,7 @@ You can strart CLI in multiple ways:
   3. **E** Means Exits.
   4. **B** Means Brynjolf(Player).
   5. **X** Means Wall.
+
   
  Consider Below Room:
  
@@ -91,7 +92,110 @@ If BrynJolf(Player) to left,left,left,left then Guards and BrynJolf(Player)  are
     | G | . | . | . |
      ___ ___ ___ ___
 
+### Levels of Legcay of BrynJolf(Probelms)
 
+ #### Direction Symbols:
+  1. **u** to move UP.
+  2. **d** to move DOWN.
+  3. **r** to Move RIGHT.
+  4. **l** to Move LEFT.
+
+#### Probelm1: Establishment:
+  Sequunce of movements and room will provided as input and we need to print the room how that room looks at the end.
+  Example: 
+    input: 
+   
+      Sequunce of movements: rll
+      Room: 
+                   ___ ___ ___ ___
+                  | . | . | . | X |
+                   ___ ___ ___ ___
+                  | . | G | . | X |
+                   ___ ___ ___ ___
+                  | . | B | . | E |
+                   ___ ___ ___ ___
+                  | . | . | G | . |
+                   ___ ___ ___ ___
+     
+    output:
+
+        Room:
+                 ___ ___ ___ ___
+                | . | . | . | X |
+                 ___ ___ ___ ___
+                | G | . | . | X |
+                 ___ ___ ___ ___
+                | B | . | . | E |
+                 ___ ___ ___ ___
+                | . | G | . | . |
+                 ___ ___ ___ ___
+
+          status: safe
+    ```
  
+#### Probelm2: EnLightenment:
+  1.Sequunce of movements and room will provided as input and we need print the shortest path to win or print status if already given sequence of moveements leads to won or lose or undecided status.
+  2.Only Room Data  will provided as input and we need to print the room along with shortest wining path.
+  Example for Case 1: 
+ 
+    input: 
+   
+      Sequunce of movements: rll
+      Room: 
+                   ___ ___ ___ ___
+                  | . | . | . | X |
+                   ___ ___ ___ ___
+                  | . | G | . | X |
+                   ___ ___ ___ ___
+                  | . | B | . | E |
+                   ___ ___ ___ ___
+                  | . | . | G | . |
+                   ___ ___ ___ ___
+     
+    output:
+
+        Room:
+                 ___ ___ ___ ___
+                | . | . | . | X |
+                 ___ ___ ___ ___
+                | G | . | . | X |
+                 ___ ___ ___ ___
+                | B | . | . | E |
+                 ___ ___ ___ ___
+                | . | G | . | . |
+                 ___ ___ ___ ___
+
+          path: rrrr
+   Example for Case 2: 
+ 
+    input: 
+   
+      Sequunce of movements: <empty>
+      Room: 
+                   ___ ___ ___ ___
+                  | . | . | . | X |
+                   ___ ___ ___ ___
+                  | . | G | . | X |
+                   ___ ___ ___ ___
+                  | . | B | . | E |
+                   ___ ___ ___ ___
+                  | . | . | G | . |
+                   ___ ___ ___ ___
+     
+    output:
+
+        Room:
+                 ___ ___ ___ ___
+                | . | . | . | X |
+                 ___ ___ ___ ___
+                | .| . | G | X |
+                 ___ ___ ___ ___
+                | . | . | . | E |
+                 ___ ___ ___ ___
+                | . | . | G | . |
+                 ___ ___ ___ ___
+
+          path: rrr
+     
  
 

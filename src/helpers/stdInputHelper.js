@@ -16,13 +16,26 @@ const getInput = () =>  new Promise((resolve) => {
 async function getMovementDirections() {
 	console.log('Please Enter Movement Directions: ')
 	let movementDirections = await getInput()
-	if(!movementDirections || !movementDirections.length ) {
-		await getInput()
-		return
+	if(!movementDirections || !movementDirections.length) {
+		return await getMovementDirections()
 	}
 
+
 	movementDirections = (movementDirections || '').split('')
-	return movementDirections
+	if(isInvalidMovementDirections(movementDirections)) {
+		console.log('Invalid Movement Directions')
+		return await getMovementDirections()
+	} 
+	return movementDirections 
+}
+function isInvalidMovementDirections (movementDirections = []) {
+	const allowedChars = {
+		l: true,
+		r: true,
+		d: true,
+		u: true,
+	}
+	return movementDirections.some(char => !allowedChars[char])
 }
 
 export {

@@ -42,7 +42,7 @@ You can strart CLI in multiple ways:
                ___ ___ ___ ___
 
 
- 1.  The exit is to the right of Brynjolf. He runs right and the guards do the same too. He goes out of the exit andleaves. This is how it would look: 
+  The exit is to the right of Brynjolf. He runs right and the guards do the same too. He goes out of the exit andleaves. This is how it would look: 
  
              ___ ___ ___ ___
             | . | . | . | X |
@@ -55,7 +55,7 @@ You can strart CLI in multiple ways:
              ___ ___ ___ ___
 
  
- 2.if BrynJolf(Player) to right,right He Reaches the Exit than means BrynJolf Won.This is how it would look: 
+If BrynJolf(Player) to right,right He Reaches the Exit than means BrynJolf Won.This is how it would look: 
  
      ___ ___ ___ ___
     | . | . | . | X |
@@ -67,7 +67,7 @@ You can strart CLI in multiple ways:
     | . | . | . | G |
      ___ ___ ___ ___
  
- 3.If BrynJolf(Player) to Up after right then Guard Will Catch BrynJolf(Player)  than means BrynJolf was Lose.This is how it would look: 
+ If BrynJolf(Player) to right,up then Guard Will Catch BrynJolf(Player)  than means BrynJolf was Lose.This is how it would look: 
  
      ___ ___ ___ ___
     | . | . | . | X |
@@ -79,7 +79,7 @@ You can strart CLI in multiple ways:
     | . | . | . | G |
      ___ ___ ___ ___
  
-  3.If BrynJolf(Player) to left,left,left,left then Guards and BrynJolf(Player)  are unable to Move than means game was undecided.This is how it would look: 
+If BrynJolf(Player) to left,left,left,left then Guards and BrynJolf(Player)  are unable to Move than means game was undecided.This is how it would look: 
 
      ___ ___ ___ ___
     | . | . | . | X |

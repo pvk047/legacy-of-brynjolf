@@ -23,7 +23,7 @@ You can strart CLI in multiple ways:
   Brynjolf, a legendary thief is known to escape even from the most secure rooms. Over the years, the guards have been tightening their security.
   Fearing the future of younger thieves he decidedto start a school of Larceny.
   
-  Brynjolf can move one step either in left, right, up or down.He keeps going through empty space until he hits a wall or reaches the exit. If he reaches the exit he wins.The guards copy Bryjolf's direction and run in the samedirection except they don't go through the exit. Theytreat it like a wall.
+  Brynjolf can move one step either to left, right, up or down.He keeps going through empty space until he hits a wall or reaches the exit. If he reaches the exit he wins.The guards copy Bryjolf's direction and run in the samedirection except they don't go through the exit. Theytreat it like a wall.
   #### Symbols:
   1. **.** Means Empty Space.
   2. **G** Means Guards.

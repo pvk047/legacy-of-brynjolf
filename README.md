@@ -11,8 +11,6 @@ A CLI(Node.js) implementation of Legacy of BrynJolf.
 1. Clone or download this repository.
 2. Install dependencies using `npm install`.
 3. To build use: `npm run build`.
-4. To run after build: `npm start`.
-5. If you run in dev then use: `npm run dev`.
 
 ## How to Run:
 You can strart CLI in multiple ways:

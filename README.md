@@ -37,10 +37,126 @@ Please Enter :
 > 
 ```
 
-Please Refer [About Legacy Of BrynJolf](#probelm1-establishment)] to know about Establishment Problem.
-Please Refer [About Legacy Of BrynJolf](#probelm2-enlightenment)] to know about Enlightenment Problem.
+Please Refer [About Legacy Of BrynJolf](#probelm1-establishment) to know about Establishment Problem.
 
+Please Refer [About Legacy Of BrynJolf](#probelm2-enlightenment) to know about Enlightenment Problem.
 
+#### If you choose 1 (Establishment Problem):
+
+ Please Refer [About Legacy Of BrynJolf](#probelm1-establishment) to know about Establishment Problem.
+ 
+ You will prompted as below:
+ ```
+ ****Establish Problem*****
+Note: 
+ '.' means Empty.'G' means Guard.'X' means Wall.'B' means Brynjolf.'E' means Exit.
+ ___ ___ ___ ___
+| . | . | . | X |
+ ___ ___ ___ ___
+| . | G | . | X |
+ ___ ___ ___ ___
+| . | B | . | E |
+ ___ ___ ___ ___
+| . | . | G | . |
+ ___ ___ ___ ___
+
+ Enter: 
+'u' to move up.
+'d' to move down.
+'l' to move left.
+'r' to move right.
+Example directions string: 'uud' means move up, move up and move down from the current position of 'B'
+Please Enter Movement Directions: 
+ ```
+Now you have to enter the suqence of movements as per above instructions.
+
+Example: 
+You entered `rrrrr` then you will prompted as below: 
+```
+--------------------Input----------------------------------
+Directions:  [ 'r', 'r', 'r', 'r', 'r' ]
+ ___ ___ ___ ___
+| . | . | . | X |
+ ___ ___ ___ ___
+| . | G | . | X |
+ ___ ___ ___ ___
+| . | B | . | E |
+ ___ ___ ___ ___
+| . | . | G | . |
+ ___ ___ ___ ___
+--------------------Result----------------------------------
+ ___ ___ ___ ___
+| . | . | . | X |
+ ___ ___ ___ ___
+| . | . | G | X |
+ ___ ___ ___ ___
+| . | . | . | E |
+ ___ ___ ___ ___
+| . | . | . | G |
+ ___ ___ ___ ___
+
+Result: win:executed 2 of 5
+```
+
+#### If you choose 2 (Enlightenment Problem.):
+
+Please Refer [About Legacy Of BrynJolf](#probelm2-enlightenment) to know about Enlightenment Problem.
+ 
+ You will prompted as below:
+ ```
+ ****Establish Problem*****
+Note: 
+ '.' means Empty.'G' means Guard.'X' means Wall.'B' means Brynjolf.'E' means Exit.
+ ___ ___ ___ ___
+| . | . | . | X |
+ ___ ___ ___ ___
+| . | G | . | X |
+ ___ ___ ___ ___
+| . | B | . | E |
+ ___ ___ ___ ___
+| . | . | G | . |
+ ___ ___ ___ ___
+
+ Enter: 
+'u' to move up.
+'d' to move down.
+'l' to move left.
+'r' to move right.
+Example directions string: 'uud' means move up, move up and move down from the current position of 'B'
+Please Enter Movement Directions: 
+ ```
+Now you have to enter the suqence of movements as per above instructions.
+
+Example: 
+You entered `rrrrr` then you will prompted as below: 
+```
+--------------------Input----------------------------------
+Directions:  [ 'r', 'r', 'r', 'r', 'r' ]
+ ___ ___ ___ ___
+| . | . | . | X |
+ ___ ___ ___ ___
+| . | G | . | X |
+ ___ ___ ___ ___
+| . | B | . | E |
+ ___ ___ ___ ___
+| . | . | G | . |
+ ___ ___ ___ ___
+--------------------Result----------------------------------
+ ___ ___ ___ ___
+| . | . | . | X |
+ ___ ___ ___ ___
+| . | . | G | X |
+ ___ ___ ___ ___
+| . | . | . | E |
+ ___ ___ ___ ___
+| . | . | . | G |
+ ___ ___ ___ ___
+
+Result: win:executed 2 of 5
+```
+
+#### If you choose 3(Exit):
+You will prompted with Bye and Exits(closes) this Application.
 
 
 

@@ -1,7 +1,7 @@
 import config from '../config'
 function invokeGame() {
 	console.log('Welcome to Legacy of BrynJolf')
-	console.log('Please Enter : \n 1--> Establishment of the Problem \n 2 --> Enlightenment of the Problem \n 3 --> Exit.')
+	console.log('Please Enter : \n 1--> to Start Establishment Problem. \n 2 --> to Start Enlightenment Problem. \n 3 --> to Exit.')
 }
 
 function exitFromGame() {

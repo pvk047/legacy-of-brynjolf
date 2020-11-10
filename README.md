@@ -278,7 +278,9 @@ If BrynJolf(Player) to left,left,left,left then Guards and BrynJolf(Player)  are
  
 #### Probelm2: EnLightenment:
   1.Sequunce of movements and room will provided as input and we need print the shortest path to win or print status if already given sequence of moveements leads to won or lose or undecided status.
+  
   2.Only Room Data  will provided as input and we need to print the room along with shortest wining path.
+  
   Example for Case 1: 
  
     input: 

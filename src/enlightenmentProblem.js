@@ -111,8 +111,13 @@ function BFS ({ source, dest, room, guards }) {
 
 			const result = movePlayerAndGuards({ room: isolatedRoom, player: { x: point.x, y: point.y }, direction: move.symbol , guards})
 			
-			if(result.stop && result.status == 'won') {
+			if(result.status == 'win') {
+				point.path += move.symbol
 				return { found: true, point }
+			}
+
+			if(result.stop) {
+				continue
 			}
 		
 			if(isValidPoint({ point: {x,y}, room: isolatedRoom }) && !visited[x][y]) {

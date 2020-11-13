@@ -48,11 +48,19 @@ function getPlayersAndGuards(room) {
 }
 
 function isPlayerUnableMoveInGivenDirection({ player, room, newPosition, direction }) {
-	if(newPosition.x >= config.room_config.size || newPosition.y >= config.room_config.size) {
+	if(newPosition.x >= config.room_config.size || newPosition.x < 0  || newPosition.y >= config.room_config.size || newPosition.y < 0 ) {
 		return true
 	}
 	const isWall =  room[newPosition.x][newPosition.y] === config.room_config.symbols.wall
 	return isWall || isGivenPositionMetACornerByMovingInGivenDirection ({ direction , position: player }) 
+}
+
+function isGuardUnableMoveInGivenDirection({ guard, room, newPosition, direction }) {
+	if(newPosition.x >= config.room_config.size || newPosition.x < 0  || newPosition.y >= config.room_config.size || newPosition.y < 0 ) {
+		return true
+	}
+	const isWallOrAnotherGuard =  room[newPosition.x][newPosition.y] === config.room_config.symbols.wall || room[newPosition.x][newPosition.y] === config.room_config.symbols.guards
+	return isWallOrAnotherGuard || isGivenPositionMetACornerByMovingInGivenDirection ({ direction , position: guard }) 
 }
 
 function isGivenPositionMetACornerByMovingInGivenDirection ({ direction, position }) {
@@ -175,7 +183,7 @@ function moveGuardsAndGetStatus({ guards, room, direction  }) {
 		const guard = guards[i]
 		const newPosition = getNewPosition({ currentPosition: guard, direction })
 
-		if(isPlayerUnableMoveInGivenDirection({ player: guard , room, newPosition, direction})) {
+		if(isGuardUnableMoveInGivenDirection({ guard , room, newPosition, direction})) {
 			guardsUnableToMoveCount += 1
 			continue
 		}

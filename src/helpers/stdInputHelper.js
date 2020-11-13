@@ -28,6 +28,20 @@ async function getMovementDirections() {
 	} 
 	return movementDirections 
 }
+async function getMovementDirectionsForEnlightenment() {
+	console.log('Please Enter Movement Directions: ')
+	let movementDirections = await getInput()
+	if(!movementDirections || !movementDirections.length) {
+		return ''
+	}
+
+	movementDirections = (movementDirections || '').split('')
+	if(isInvalidMovementDirections(movementDirections)) {
+		console.log('Invalid Movement Directions')
+		return await getMovementDirections()
+	} 
+	return movementDirections 
+}
 function isInvalidMovementDirections (movementDirections = []) {
 	const allowedChars = {
 		l: true,
@@ -40,5 +54,6 @@ function isInvalidMovementDirections (movementDirections = []) {
 
 export {
 	getInput,
-	getMovementDirections
+	getMovementDirections,
+	getMovementDirectionsForEnlightenment,
 }

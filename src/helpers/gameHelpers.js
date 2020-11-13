@@ -1,4 +1,5 @@
 import config from '../config'
+import { printRoom } from './roomHelpers'
 function invokeGame() {
 	console.log('Welcome to Legacy of BrynJolf')
 	console.log('Please Enter : \n 1--> to Start Establishment Problem. \n 2 --> to Start Enlightenment Problem. \n 3 --> to Exit.')
@@ -21,8 +22,10 @@ function getPlayersAndGuards(room) {
 	}
 	const  PLAYER_SYMBOL = config.room_config.symbols.player
 	const  GUARD_SYMBOL = config.room_config.symbols.guards
+	const  EXIT = config.room_config.symbols.exit
 	const player = {}
 	const guards = []
+	const exit = {}
 
 	room.forEach((row, x) => {
 		row.forEach((col, y) => {
@@ -34,10 +37,14 @@ function getPlayersAndGuards(room) {
 			case GUARD_SYMBOL:
 				guards.push({ x, y })
 				break
+			case EXIT:
+				exit.x = x
+				exit.y = y
+				break
 			}
 		})
 	})
-	return { player, guards }
+	return { player, guards, exit }
 }
 
 function isPlayerUnableMoveInGivenDirection({ player, room, newPosition, direction }) {
@@ -121,7 +128,6 @@ function getNewPosition({ currentPosition, direction }) {
 }
 
 function movePlayerAndGuards({ room, player, direction, guards }) {
- 
 	const newPosition = getNewPosition({ currentPosition: player, direction })
 
 	if(isPlayerCaughtByGuard({ room, newPosition })) {
@@ -138,8 +144,13 @@ function movePlayerAndGuards({ room, player, direction, guards }) {
 		updateOldPositionWithNewPosition(player, newPosition)
 	}
 
-  
+	console.log()
+	console.log('---------------------------------', direction)
+  printRoom(room)
 	const { isGuardsUnableToMove, guardCatchPlayer }= moveGuardsAndGetStatus({ guards, room, direction  }) 
+  printRoom(room)
+	console.log('---------------------------------')
+	console.log()
 
 	if(guardCatchPlayer) {
 		return { stop: true, status: 'lose'}

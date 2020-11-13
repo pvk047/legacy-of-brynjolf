@@ -1,9 +1,8 @@
 import { getRoomData, printRoom, printRoomNotes } from './helpers/roomHelpers'
-import { getMovementDirections, getMovementDirectionsForEnlightenment } from './helpers/stdInputHelper'
+import { getMovementDirectionsForEnlightenment } from './helpers/stdInputHelper'
 import { 
 	printDirectionStringNotes,
 	executeMovesInAGivenRoom,
-	moveGuardsAndGetStatus,
 	movePlayerAndGuards,
 	getPlayersAndGuards
 } from './helpers/gameHelpers'
@@ -58,7 +57,8 @@ function findShortestPath (room) {
 	const result = BFS({room, source: player, dest: exit, guards})
 	return result
 }
-const visited = Array(4).fill('').map(el => Array(4).fill(false))
+// eslint-disable-next-line no-unused-vars
+const visited = Array(4).fill('').map((_) => Array(4).fill(false))
 const dequeue = []
 function BFS ({ source, dest, room, guards }) {
 	const moves = [

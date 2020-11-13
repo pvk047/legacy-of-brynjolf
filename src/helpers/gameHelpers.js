@@ -1,5 +1,4 @@
 import config from '../config'
-import { printRoom } from './roomHelpers'
 function invokeGame() {
 	console.log('Welcome to Legacy of BrynJolf')
 	console.log('Please Enter : \n 1--> to Start Establishment Problem. \n 2 --> to Start Enlightenment Problem. \n 3 --> to Exit.')

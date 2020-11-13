@@ -144,13 +144,7 @@ function movePlayerAndGuards({ room, player, direction, guards }) {
 		updateOldPositionWithNewPosition(player, newPosition)
 	}
 
-	console.log()
-	console.log('---------------------------------', direction)
-  printRoom(room)
 	const { isGuardsUnableToMove, guardCatchPlayer }= moveGuardsAndGetStatus({ guards, room, direction  }) 
-  printRoom(room)
-	console.log('---------------------------------')
-	console.log()
 
 	if(guardCatchPlayer) {
 		return { stop: true, status: 'lose'}
@@ -189,7 +183,6 @@ function moveGuardsAndGetStatus({ guards, room, direction  }) {
 			guardCatchPlayer = true
 			break
 		}
-  
 		moveIntoNewPosition ({ oldPosition: guard, newPosition, room, direction, symbol: config.room_config.symbols.guards })
 		updateOldPositionWithNewPosition(guard, newPosition)
 	}

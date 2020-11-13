@@ -60,13 +60,8 @@ function findShortestPath (room) {
 }
 const visited = Array(4).fill('').map(el => Array(4).fill(false))
 const dequeue = []
-function BFS ({ source, dest, room }) {
+function BFS ({ source, dest, room, guards }) {
 	const moves = [
-		{
-			x: 0,
-			y: 1,
-			symbol: 'r',
-		},
 		{
 			x: 0,
 			y: -1,
@@ -76,6 +71,11 @@ function BFS ({ source, dest, room }) {
 			x: -1,
 			y: 0,
 			symbol: 'u',
+		},
+		{
+			x: 0,
+			y: 1,
+			symbol: 'r',
 		},
 		{
 			x: 1,
@@ -90,6 +90,8 @@ function BFS ({ source, dest, room }) {
 	visited[source.x][source.y] = true
 	source.distance = 0
 	source.path = ''
+	let roomCopy = JSON.parse(JSON.stringify(room))
+	source.parent_room = roomCopy
 
 	dequeue.unshift(source)
 
@@ -104,14 +106,23 @@ function BFS ({ source, dest, room }) {
 			const move = moves[i]
 			const x = point.x + move.x
 			const y = point.y + move.y
+	
+			const isolatedRoom = JSON.parse(JSON.stringify(point.parent_room))
 
-			if(isValidPoint({ point: {x,y}, room }) && !visited[x][y]) {
+			const result = movePlayerAndGuards({ room: isolatedRoom, player: { x: point.x, y: point.y }, direction: move.symbol , guards})
+			
+			if(result.stop && result.status == 'won') {
+				return { found: true, point }
+			}
+		
+			if(isValidPoint({ point: {x,y}, room: isolatedRoom }) && !visited[x][y]) {
 				visited[x][y] = true
 				const path = `${point.path}${move.symbol}`
 				const newPoint = {
 					x,y,
 					distance: point.distance + 1,
 					path,
+					parent_room: isolatedRoom,
 				}
 				dequeue.unshift(newPoint)
 			}
